@@ -16,6 +16,12 @@ switch (dia){
         break;
 
     default:
-    diaDaSemana = "Dia normal de trabalho.";
+        diaDaSemana = "Dia normal de trabalho.";
 }
+
+document.writeln(`
+    <h1>Hoje é ${dia}</h1>
+    <h2> ${diaDaSemana}</h2>
+    <p><button onclick="location.reload()">Novo dia</button></p>
+    `);
 
